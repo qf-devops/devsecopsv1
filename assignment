@@ -1,0 +1,24 @@
+1.  create ec2 instance and install maven
+     run maven commands.
+     mvn archetype:generate -DgroupId=com.dhl.app -DartifactId=coreengine -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+2. CI tool(Jenkins)
+
+      setup Jenkins  server:
+           3  sudo apt install openjdk-17-jdk-headless
+            4  sudp apt update
+            5  sudo apt update
+            6  clear
+            7  sudo apt install openjdk-17-jdk-headless
+            8  cleaer
+            9  clear
+           10  pwd
+           11  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+           12  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+           13  sudo apt-get update
+           14  sudo apt-get install jenkins
+           15  clear
+           16  ps -ef|grep jenkins
+           17  netstat -tunlp
+           18  cat /var/lib/jenkins/secrets/initialAdminPassword
+           19  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
